@@ -6,7 +6,7 @@ def validate_temperature(value):
         value = float(value)
     except ValueError:
         return "Invalid input"
-    if value >= -50 or value <= 150:
+    if -50 <= value <= 150:
         return value
     return "Not within valid range"
 
